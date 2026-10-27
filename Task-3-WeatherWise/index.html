@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#10182b" />
+  <meta name="description" content="WeatherWise provides current weather conditions and a five-day forecast for cities around the world." />
+  <title>WeatherWise | Global Weather</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="WeatherWise home">
+        <span class="brand-icon">☀</span>
+        <span>Weather<span class="brand-accent">Wise</span></span>
+      </a>
+      <div class="live-status">
+        <span class="status-dot"></span>
+        Weather dashboard
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <p class="eyebrow">YOUR WORLD, AT A GLANCE</p>
+        <h1>Weather, made <span>beautiful.</span></h1>
+        <p class="subtitle">Explore current conditions and the forecast for any city.</p>
+      </section>
+
+      <form id="search-form" class="search-form">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <label class="visually-hidden" for="city-input">Search for a city</label>
+        <input
+          id="city-input"
+          type="search"
+          placeholder="Search a city, e.g. Accra"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="search-button">Search <span>→</span></button>
+      </form>
+
+      <p id="status-message" class="status-message" role="status" aria-live="polite">
+        Search for a city to see its weather.
+      </p>
+
+      <section id="weather-content" class="weather-content" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CURRENT CONDITIONS</p>
+            <h2>Right now</h2>
+          </div>
+          <span id="current-date" class="date-label"></span>
+        </div>
+
+        <article class="current-card">
+          <div class="current-main">
+            <div>
+              <p class="location-label">YOUR SELECTED LOCATION</p>
+              <h2 id="city-name">Accra, GH</h2>
+              <p id="weather-description" class="weather-description">Loading conditions...</p>
+            </div>
+            <div class="temperature-block">
+              <img id="weather-icon" src="" alt="" />
+              <p><span id="temperature">--</span><span class="degree">°C</span></p>
+              <span id="feels-like" class="feels-like">Feels like --°C</span>
+            </div>
+          </div>
+
+          <div class="weather-divider"></div>
+
+          <div class="metrics-grid">
+            <div class="metric">
+              <span class="metric-icon">💧</span>
+              <div><p>Humidity</p><strong id="humidity">--%</strong></div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon">💨</span>
+              <div><p>Wind speed</p><strong id="wind-speed">-- m/s</strong></div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon">◉</span>
+              <div><p>Pressure</p><strong id="pressure">-- hPa</strong></div>
+            </div>
+            <div class="metric">
+              <span class="metric-icon">🌡</span>
+              <div><p>Visibility</p><strong id="visibility">-- km</strong></div>
+            </div>
+          </div>
+        </article>
+
+        <section class="forecast-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">PLAN AHEAD</p>
+              <h2>5-day forecast</h2>
+            </div>
+            <span class="forecast-note">Daily outlook</span>
+          </div>
+          <div id="forecast-grid" class="forecast-grid"></div>
+        </section>
+
+        <p class="data-credit">Weather data provided by OpenWeatherMap.</p>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#">
+        <span class="brand-icon">☀</span>
+        <span>Weather<span class="brand-accent">Wise</span></span>
+      </a>
+      <p>Made for curious minds, everywhere.</p>
+    </footer>
+  </div>
+</body>
+</html>
