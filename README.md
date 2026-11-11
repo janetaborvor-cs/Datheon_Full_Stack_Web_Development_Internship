@@ -5,6 +5,7 @@ This repository contains four projects completed as part of the Datheon Full Sta
 ## Projects
 
 ### Task 1: Personal Portfolio
+
 A responsive personal portfolio website showcasing my profile, skills, projects, and contact information.
 
 **Technologies:** HTML, CSS, JavaScript
@@ -12,6 +13,7 @@ A responsive personal portfolio website showcasing my profile, skills, projects,
 **Folder:** `Task-1-Portfolio/`
 
 ### Task 2: TaskFlow — Productivity Manager
+
 A task management application for organizing tasks by category, setting due dates, marking tasks as complete, and filtering tasks. Tasks are saved in the browser using local storage.
 
 **Technologies:** HTML, CSS, JavaScript, Local Storage
@@ -19,6 +21,7 @@ A task management application for organizing tasks by category, setting due date
 **Folder:** `Task-2-TaskFlow/`
 
 ### Task 3: WeatherWise — Weather Application
+
 A weather application that retrieves weather information through a Node.js and Express backend, keeping the weather API key on the server rather than exposing it in frontend code.
 
 **Technologies:** HTML, CSS, JavaScript, Node.js, Express, OpenWeather API
@@ -26,7 +29,8 @@ A weather application that retrieves weather information through a Node.js and E
 **Folder:** `Task-3-WeatherWise/`
 
 ### Task 4: ShopLuxe — E-commerce Storefront
-A responsive e-commerce storefront with product browsing, search, category filtering, a shopping cart, quantity management, and a simulated checkout experience.
+
+A responsive e-commerce storefront with product browsing, search, category filtering, a shopping cart, quantity management, tax and shipping calculations, and a simulated checkout experience.
 
 **Technologies:** React, Vite, JavaScript, CSS, FakeStoreAPI
 
